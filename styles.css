@@ -39,12 +39,14 @@ ul {
     margin-left: 90px;
     color: #f9fbf8;
     font-size: 24px;
+    flex-shrink: 0;
 }
 
 .right-header {
     margin-right: 90px;
     font-size: 18px;
     align-content: end;
+    flex-shrink: 0;
 }
 
 .top-third-content {
@@ -136,15 +138,19 @@ ul {
 
 .quote-third {
     display: flex;
-    flex-direction: column;
-    flex-basis: auto;
     justify-content: center;
     align-items: center;
     height: 380px;
     background-color: #e6e7eb;
-    padding-left: 500px;
-    padding-right: 500px;
-    border: 2px solid red;
+}
+
+.container {
+    flex-direction: column;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    flex-shrink: 0;
 }
 
 .quote {
@@ -155,13 +161,12 @@ ul {
     font-weight: lighter;
     color: #1F2937;
     flex-basis: auto;
-    width: 700px;;
-    border: 2px solid red;
 }
 
 .thor {
-    text-align: right;
+    display: flex;
+    width: 250px;
     font-weight: 900;
     font-size: 24px;
-    align-self: flex-end;
+    margin-left: auto;
 }
